@@ -1,0 +1,27 @@
+// 一些重复使用的 style
+@mixin border($width, $style, $color) {
+  border: $width $style $color;
+}
+
+// 字体行高
+@mixin fontSize($size, $lineHeight) {
+  font-size: $size;
+  line-height: $lineHeight;
+}
+
+@mixin bgShadow($width1, $width2, $color) {
+  box-shadow: 0 $width1 $width1 0 $color;
+}
+
+@mixin ellipsis() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin align (){
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}

@@ -1,0 +1,76 @@
+.leaflet-top, .leaflet-bottom{
+  z-index: auto;
+}
+
+.leaflet-popup-content-wrapper {
+  @include background_color("pannelBgColor");
+}
+
+.map-hover-pop {
+  position: relative;
+  // top: 200px;
+  // left: 200px;
+  width: 300px;
+  box-sizing: border-box;
+  z-index: 900;
+  @include background_color("pannelBgColor");
+  // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  .title {
+    display: flex;
+    box-sizing: border-box;
+    // padding: 16px 20px 0;
+    .title-text {
+      flex: 1;
+      font-weight: 700;
+      @include font_color("fontColorA");
+      @include fontSize(20px, 28px);
+    }
+    .close-icon {
+      width: 30px;
+      text-align: right;
+      cursor: pointer;
+      @include fontSize(14px, 28px);
+      @include font_color("fontColorB");
+    }
+  }
+  .content {
+    .list {
+      margin-bottom: 16px;
+      .list-item {
+        display: flex;
+        box-sizing: border-box;
+        padding: 0 24px;
+        margin-bottom: 3px;
+        .label,
+        .text {
+          @include font_color("fontColorB");
+          @include fontSize(12px, 26px);
+        }
+        .label {
+          width: 120px;
+          text-align: right;
+          margin-right: 8px;
+        }
+        .text {
+          flex: 1;
+        }
+      }
+    }
+  }
+  .footer {
+    border-top: 1px solid #000;
+    height: 32px;
+    line-height: 32px;
+    font-size: 12px;
+    text-align: center;
+    @include border_top_color('dividingLineColor');
+    @include font_color("fontColorA");
+    cursor: pointer;
+    &:hover {
+      background: $mainColor;
+      color: #fff !important;
+      border-radius: 0px 0px 8px 8px;
+    }
+  }
+}

@@ -1,0 +1,71 @@
+@import "./themes.scss";
+
+// 遍历主题 map
+@mixin themeify {
+  @each $theme-name, $theme-map in $themes {
+    $theme-map: $theme-map !global;
+    [data-theme="#{$theme-name}"] & {
+      @content;
+    }
+  }
+}
+
+// 声明一个根据key获取颜色的function
+@function themed($key) {
+  @return map-get($theme-map, $key);
+}
+
+// 获取背景颜色
+@mixin background_color($color) {
+  @include themeify {
+    background-color: themed($color) !important;
+  }
+}
+// 渐变背景色
+// 获取背景颜色
+@mixin background_gradients_color($color) {
+  @include themeify {
+    background-image: linear-gradient($color);
+  }
+}
+
+// 获取字体颜色
+@mixin font_color($color) {
+  @include themeify {
+    color: themed($color) !important;
+  }
+}
+
+// 获取边框颜色
+@mixin border_color($color) {
+  @include themeify {
+    border-color: themed($color) !important;
+  }
+}
+// border-bottom
+@mixin border_bottom_color($color) {
+  @include themeify {
+    border-bottom-color: themed($color) !important;
+  }
+}
+
+// border-bottom
+@mixin border_top_color($color) {
+  @include themeify {
+    border-top-color: themed($color) !important;
+  }
+}
+// border-bottom
+@mixin border_right_color($color) {
+  @include themeify {
+    border-right-color: themed($color) !important;
+  }
+}
+// border-bottom
+@mixin border_left_color($color) {
+  @include themeify {
+    border-left-color: themed($color) !important;
+  }
+}
+
+

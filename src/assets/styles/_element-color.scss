@@ -1,0 +1,435 @@
+// filter 组件
+
+//select
+#app /deep/ .el-select .el-input__inner,
+.el-input__inner,
+.el-textarea__inner {
+  color: #333333;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  @include border_color("dividingLineColor");
+  @include background_color("selectFilterBgColor");
+  @include font_color("fontColorA");
+}
+.el-upload-dragger {
+  @include background_color("selectFilterBgColor");
+  @include border_color("dividingLineColor");
+  @include font_color("fontColorA");
+  width: 100%;
+}
+.el-select-dropdown {
+  @include background_color("selectFilterBgColor");
+  @include border_color("dividingLineColor");
+}
+.el-select-dropdown__item.hover,
+.el-select-dropdown__item:hover {
+  @include background_color("selectHoverBgColor");
+}
+
+.el-popper[x-placement^="bottom"] .popper__arrow {
+  @include border_bottom_color("selectFilterBgColor");
+  &:after {
+    top: -1px;
+    @include border_bottom_color("selectFilterBgColor");
+  }
+}
+
+// 时间
+#app /deep/ .el-date-editor .el-range-input,
+#app /deep/ .el-date-editor .el-range-separator {
+  @include background_color("selectFilterBgColor");
+  @include font_color("fontColorA");
+}
+.el-picker-panel,
+.el-picker-panel__footer,
+.el-picker-panel__content {
+  @include background_color("selectFilterBgColor");
+  @include font_color("fontColorA");
+  @include border_color("dividingLineColor");
+}
+
+.el-date-range-picker__time-header {
+  @include background_color("selectFilterBgColor");
+  @include border_color("dividingLineColor");
+}
+.el-picker-panel__icon-btn {
+  @include font_color("tableTextColor");
+}
+.el-date-table th {
+  @include border_bottom_color("dividingLineColor");
+}
+.el-picker-panel__footer {
+  .el-button--default {
+    @include border_color("dividingLineColor");
+    @include background-color("paginatePagerBgColor");
+    @include font_color("fontColorC");
+  }
+}
+.el-date-table td.in-range div,
+.el-date-table td.in-range div:hover,
+.el-date-table.is-week-mode .el-date-table__row.current div,
+.el-date-table.is-week-mode .el-date-table__row:hover div,
+.el-month-table td.in-range div,
+.el-month-table td.in-range div:hover,
+.el-month-table.is-week-mode .el-date-table__row.current div,
+.el-month-table.is-week-mode .el-date-table__row:hover div  {
+  @include background-color("timeSelectBgColor");
+  // @include font_color("timeSelectTextColor");
+}
+
+.el-date-table td.end-date span,
+.el-date-table td.start-date span,
+.el-month-table td.end-date span,
+.el-month-table td.start-date span {
+  background-color: $mainColor;
+}
+// table
+
+#app /deep/ .table-wrapper .el-table th {
+  @include background_color("tableHeadBgColor");
+  @include font_color("fontColorC");
+}
+#app /deep/ .table-wrapper .el-table td {
+  background-color: transparent !important;
+  @include font_color("fontColorA");
+  @include background_color("pannelBgColor");
+}
+#app /deep/ .table-wrapper .el-table__fixed-right-patch {
+  @include background_color("tableHeadBgColor");
+  @include border_top_color("dividingLineColor");
+  @include border_bottom_color("dividingLineColor");
+  box-sizing: border-box;
+}
+
+#app /deep/ .table-wrapper .el-table .cell {
+  @include fontSize(14px, 22px);
+}
+
+#app /deep/ .table-wrapper .el-table--border th,
+#app /deep/ .table-wrapper .el-table--border td,
+#app /deep/ .table-wrapper.el-table--border th,
+#app /deep/ .table-wrapper.el-table__body-wrapper,
+#app
+  /deep/
+  .table-wrapper.el-table--border.is-scrolling-left
+  ~ .el-table__fixed,
+#app /deep/ .table-wrapper .el-table--border,
+#app /deep/ .table-wrapper .el-table--group,
+#app /deep/ .table-wrapper .el-table td,
+.el-table th.is-leaf {
+  @include border_color("dividingLineColor");
+}
+
+// paginate
+
+#app /deep/ .paginate-wrapper .el-pager li,
+#app /deep/ .paginate-wrapper .el-pagination button {
+  @include border_color("dividingLineColor");
+  @include background-color("paginatePagerBgColor");
+  @include font_color("fontColorC");
+}
+#app /deep/ .paginate-wrapper .el-pager li.active {
+  background-color: $mainColor !important;
+  border-color: $mainColor !important;
+  color: #fff !important;
+}
+#app /deep/ .paginate-wrapper .el-pagination__jump,
+#app /deep/ .paginate-wrapper .el-pagination__total {
+  @include font_color("fontColorC");
+}
+
+// form
+#app /deep/ .form-box .el-form-item__label {
+  @include font_color("fontColorB");
+  font-size: 14px;
+}
+
+#app /deep/ .form-box .el-input.is-disabled .el-input__inner {
+  background-color: transparent !important;
+  @include font_color("fontColorA");
+  padding: 0;
+}
+#app /deep/ .el-button--default {
+  // @include background_color('mapBtnBgColor');
+  // @include font_color('fontColo0rA');
+  // @include border_color('titleButtonColor');
+  @include border_color("dividingLineColor");
+  @include background-color("paginatePagerBgColor");
+  @include font_color("fontColorB");
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
+}
+#app /deep/ .el-button--primary {
+  background-color: $mainColor !important;
+  border-color: $mainColor !important;
+  color: #fff !important;
+}
+
+// checkbox
+#app /deep/ .el-checkbox__input.is-checked .el-checkbox__inner,
+.el-checkbox__input.is-indeterminate .el-checkbox__inner {
+  background-color: $mainColor !important;
+  border-color: $mainColor !important;
+}
+#app /deep/ .el-checkbox__input.is-checked + .el-checkbox__label {
+  color: $mainColor !important;
+}
+
+// switch
+#app /deep/ .el-switch.is-checked .el-switch__core {
+  border-color: $mainColor !important;
+  background-color: $mainColor !important;
+}
+
+// radio 切换
+
+.el-radio-button__orig-radio:checked + .el-radio-button__inner {
+  box-shadow: none;
+  // background-color: $mainColor !important;
+  @include background_color("activeBgColor");
+  @include border_color("activeBgColor");
+  @include font_color("activeTextColor");
+}
+.el-radio__input.is-checked + .el-radio__label {
+  color: $mainColor !important;
+}
+.el-radio-button__inner {
+  @include background_color("normalBgColor");
+  @include border_color("radioborderColor");
+}
+.el-radio-button__inner:hover {
+  // color: $mainColor !important;
+  @include font_color("tableTextColor");
+}
+.el-radio__input.is-checked .el-radio__inner {
+  @include background_color("activeBgColor");
+  @include border_color("activeBgColor");
+  @include font_color("activeTextColor");
+}
+.el-date-editor.el-input {
+  width: 100px;
+}
+.el-date-editor.el-input__inner {
+  width: 200px;
+}
+
+#app /deep/ .page-wrapper .el-input__inner {
+  box-sizing: border-box;
+  display: inline-block;
+  font-size: 12px;
+  color: #333333;
+  height: 32px;
+  line-height: 32px;
+  padding: 0 24px;
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
+}
+
+#app .filter-wrapper /deep/ .el-button--default {
+  border-color: $primaryBorderColor !important;
+  color: $mainColor !important;
+  box-shadow: none;
+}
+#app .filter-wrapper /deep/ .el-button {
+  box-shadow: none;
+}
+#app .filter-wrapper {
+  .filter-input {
+    &:hover {
+      @include background-color("filterInputBgColor");
+    }
+  }
+}
+
+.el-checkbox__input.is-checked .el-checkbox__inner,
+.el-checkbox__input.is-indeterminate .el-checkbox__inner {
+  background-color: $mainColor !important;
+  border-color: $mainColor !important;
+}
+
+#app .el-tree {
+  background-color: transparent;
+}
+#app .el-tree-node {
+  &.is-current {
+    background: rgba(62, 104, 247, 0.08) !important;
+    color: $mainColor !important;
+  }
+}
+#app .el-tree-node__content {
+  height: 38px;
+  box-sizing: border-box;
+  padding-left: 18px !important;
+  &:hover {
+    background: rgba(0, 0, 0, 0.08) !important;
+  }
+}
+
+.el-popover {
+  padding: 7px !important;
+  @include background_color("pannelBgColor");
+  @include border_color("pannelBgColor");
+}
+.el-popper .popper__arrow::after {
+  left: 0;
+  bottom: -6px;
+  @include border_right_color("pannelBgColor");
+}
+.el-popover .edit-item {
+  width: 100%;
+  @include fontSize(14px, 38px);
+  @include font_color("fontColorB");
+  cursor: pointer;
+  i,
+  span {
+    @include fontSize(14px, 38px);
+  }
+  i {
+    margin-right: 8px;
+    margin-left: 8px;
+  }
+  &:hover {
+    background-color: $primaryBgColor !important;
+    i {
+      color: $mainColor !important;
+    }
+  }
+}
+.el-popper[x-placement^="right"] {
+  margin-left: -2px !important;
+}
+
+.el-transfer-panel {
+  @include background_color("pannelBgColor");
+  @include border_color("dividingLineColor");
+  .el-transfer-panel__header {
+    @include background_color("pannelBgColor");
+    @include border_bottom_color("dividingLineColor");
+  }
+}
+.el-checkbox__inner {
+  @include background_color("normalBgColor");
+  @include border_color("dividingLineColor");
+}
+
+.el-image-viewer__mask {
+  @include background_color("pannelBgColor");
+  opacity: 1;
+}
+.el-image-viewer__close {
+  font-size: 50px;
+  @include font_color("fontColorD");
+  cursor: pointer;
+  top: 24px;
+  right: 24px;
+}
+
+.el-switch__core {
+  margin: 0;
+  position: relative;
+  width: 40px;
+  height: 16px;
+  border: none;
+  outline: 0;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+.el-switch__core:after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 1px;
+  border-radius: 100%;
+  transition: all .3s;
+  width: 12px;
+  height: 12px;
+  background-color: #FFF;
+}
+.el-switch.is-checked .el-switch__core::after {
+  left: 100%;
+  margin-left: -13px;
+}
+
+.vue-treeselect__control {
+  @include background_color("normalBgColor");
+  @include border_color("dividingLineColor");
+  @include background_color("normalBgColor");
+  @include font_color("fontColorA");
+}
+.vue-treeselect__menu-container {
+  @include background_color("normalBgColor");
+  @include border_color("dividingLineColor");
+}
+.vue-treeselect__menu {
+  @include background_color("normalBgColor");
+  @include border_color("dividingLineColor");
+}
+.vue-treeselect__checkbox--unchecked {
+  @include background_color("normalBgColor");
+  @include border_color("dividingLineColor");
+}
+.vue-treeselect__label-container:hover .vue-treeselect__checkbox--unchecked {
+  @include background_color("normalBgColor");
+  @include border_color("dividingLineColor");
+}
+.vue-treeselect__checkbox--indeterminate {
+  @include background_color("normalBgColor");
+  @include border_color("dividingLineColor");
+}
+.vue-treeselect__label-container:hover
+  .vue-treeselect__checkbox--indeterminate {
+  @include background_color("normalBgColor");
+  @include border_color("dividingLineColor");
+}
+.vue-treeselect__checkbox--checked {
+  @include background_color("normalBgColor");
+  @include border_color("dividingLineColor");
+}
+.vue-treeselect__label-container:hover .vue-treeselect__checkbox--checked {
+  @include background_color("normalBgColor");
+  @include border_color("dividingLineColor");
+}
+.vue-treeselect__checkbox--disabled {
+  @include background_color("normalBgColor");
+  @include border_color("dividingLineColor");
+}
+.vue-treeselect__label-container:hover .vue-treeselect__checkbox--disabled {
+  @include background_color("normalBgColor");
+  @include border_color("dividingLineColor");
+}
+.vue-treeselect:not(.vue-treeselect--disabled)
+  .vue-treeselect__multi-value-item:not(.vue-treeselect__multi-value-item-disabled):hover
+  .vue-treeselect__multi-value-item:not(.vue-treeselect__multi-value-item-new)
+  .vue-treeselect__multi-value-item:not(.vue-treeselect__multi-value-item-new):hover {
+  cursor: pointer;
+  @include background_color("normalBgColor");
+  @include font_color("fontColorA");
+}
+.vue-treeselect__multi-value-item.vue-treeselect__multi-value-item-new:hover {
+  @include background_color("normalBgColor");
+}
+.vue-treeselect--single .vue-treeselect__option--selected:hover {
+  @include background_color("normalBgColor");
+}
+.vue-treeselect__label-container:hover .vue-treeselect__checkbox--unchecked {
+  @include background_color("normalBgColor");
+  @include border_color("dividingLineColor");
+}
+.vue-treeselect__label-container:hover
+  .vue-treeselect__checkbox--indeterminate {
+  @include background_color("normalBgColor");
+  @include border_color("dividingLineColor");
+}
+.vue-treeselect__label-container:hover .vue-treeselect__checkbox--checked {
+  @include background_color("normalBgColor");
+  @include border_color("dividingLineColor");
+}
+.vue-treeselect__label-container:hover .vue-treeselect__checkbox--disabled {
+  @include background_color("normalBgColor");
+  @include border_color("dividingLineColor");
+}
+.vue-treeselect__option--highlight {
+  @include background_color("normalBgColor");
+}
+
+.vue-treeselect__single-value {
+  @include font_color("fontColorA");
+}

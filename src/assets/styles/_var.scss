@@ -1,0 +1,52 @@
+// 主色
+$mainColor:  rgba(62,104,247,1);
+// 主色渐变色
+$mainGradientsColor:  rgba(67,70,211,1);
+
+// 文字颜色
+// 标题 主要文字颜色
+$fontDarkColorA: rgba(0, 0, 0, 0.85);
+$fontDarkColorB: rgba(0, 0, 0, 0.65);
+$fontDarkColorC: rgba(0, 0, 0, 0.45);
+$fontDarkColorD: rgba(0, 0, 0, 0.25);
+$fontLightColorA: rgba(255,255,255, 0.85);
+$fontLightColorB: rgba(255,255,255, 0.65);
+$fontLightColorC: rgba(255,255,255, 0.45);
+$fontLightColorD: rgba(255,255,255, 0.25);
+
+// 分割线 表头背景
+$lineColor: rgba(0, 0, 0, 0.12);
+$tableHeadBgColor: rgba(0, 0, 0, 0.08);
+
+// 功能色
+// 常规色
+$dangerColor: rgba(255,101,101,1);
+$warningColor: rgba(255,191,0,1);
+$successColor:rgba(22,206,185,1);
+$primaryColor:rgba(62,104,247,1);
+
+// 渐变色
+$dangerGradientsColor:  rgba(255,76,16,1);
+$warningGradientsColor: rgba(254,221,56,1);
+$successGradientsColor:rgba(0,180,194,1);
+$primaryGradientsColor:rgba(67,70,211,1);
+
+// hover 或者 选中色
+$dangerHoverColor: #CC5050;
+$warningHoverColor: #E6AC00;
+$successHoverColor:#11A494;
+$primaryHoverColor:#00B578;
+
+// 边框
+$dangerBorderColor: rgba(255,101,101,.4);
+$warningBorderColor: rgba(255,191,0,.4);;
+$successBorderColor:rgba(22,206,185,.4);
+$primaryBorderColor:rgba(62,104,247,.4);
+
+// 背景色 / 浅
+$dangerBgColor: rgba(255,101,101,.1);
+$warningBgColor: rgba(255,191,0,.1);;
+$successBgColor:rgba(22,206,185,.1);
+$primaryBgColor:rgba(62,104,247,.1);
+
+

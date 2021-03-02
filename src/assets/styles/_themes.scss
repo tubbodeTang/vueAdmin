@@ -1,0 +1,125 @@
+$themes: (
+  light: (
+    // page color
+    pageBgColor: #F7F8FC,
+    // 标题 before 背景色 按钮 边框色
+    titleButtonColor: rgba(67, 70, 211, 1),
+    titleButtonShdowColor: rgba(67, 70, 211, 0.5),
+    // 文字颜色
+    // 标题 主要文字颜色
+    fontColorA: rgba(0, 0, 0, 0.85),
+    fontColorB: rgba(0, 0, 0, 0.65),
+    fontColorC: rgba(0, 0, 0, 0.45),
+    fontColorD: rgba(0, 0, 0, 0.25),
+    logoTitleColor:'#262626',
+    // nav 背景色
+    mapBtnBgColor: #fff,
+    mainColor: rgba(62, 104, 247, 1),
+    mainSamwColor:rgba(62, 104, 247, 1),
+    mainGradientsColor: rgba(67, 70, 211, 1),
+    navFontColor: #fff,
+    //hover 指示色
+    hoverBgColor:rgba(62, 104, 247, 0.12),
+    // tabbar 下划线
+    // 底色
+    tabbarBgColor:#F2F3F7,
+    // 滇池概况 
+    leftBgColor:#F7F8FC,
+    leftPannelBgColor:#fff,
+
+    // home
+    pannelBgColor: #fff,
+    pannelFontColor: rgba(0, 0, 0, 0.85),
+    // routerchange
+    // routerChangeBgColor: #f4f4f4,
+    routerChangeBgColor: #F7F8FC,
+    // filter 筛选组件颜色配置
+    filterBgColor: rgba(255, 255, 255, 1),
+    filterBgColor1:  rgba(0,0,0,0.04),
+    selectFilterBgColor: #fff,
+    selectHoverBgColor: #f4f4f4,
+    // table
+    tableHeadBgColor: #ebebeb,
+    tableTextColor: rgba(62, 104, 247, 1),
+    tableDelTextColor: rgba(255, 101, 101, 1),
+    // paginate
+    paginatePagerBgColor: rgba(255, 255, 255, 1),
+    // 时间选择
+    timeSelectBgColor:   rgba(62,104,247,.12),
+    timeSelectTextColor: yellow,
+    // 功能se
+    dangerColor: rgba(255, 101, 101, 1),
+    // 分割线
+    dividingLineColor: rgba(0, 0, 0, 0.12),
+
+    // radio
+    activeBgColor: rgba(62, 104, 247, 1),
+    activeTextColor: rgba(255,255,255,.85),
+    normalBgColor: #fff,
+    radioborderColor:rgba(0, 0, 0, 0.12),
+    filterInputBgColor:#fff,
+    // svg 
+    svgTextColor: #070707
+  ),
+  dark: (
+     // page color
+    pageBgColor: #323334,
+    // 标题 before 背景色 按钮 边框色
+    titleButtonColor: rgba(67, 70, 211, 1),
+    titleButtonShdowColor: rgba(67, 70, 211, 0.5),
+    // 文字颜色
+      // 标题 主要文字颜色
+    fontColorA: rgba(255, 255, 255, 0.85),
+    fontColorB: rgba(255, 255, 255, 0.65),
+    fontColorC: rgba(255, 255, 255, 0.45),
+    fontColorD: rgba(255, 255, 255, 0.25),
+    logoTitleColor:#fff,
+    // nav 背景色
+    mapBtnBgColor: #1c1e24,
+    mainColor: #1f2126,
+    mainSamwColor:rgba(62, 104, 247, 1),
+    mainGradientsColor: #1f2126,
+    navFontColor: rgba(255, 255, 255, 0.45),
+    //hover 指示色
+    hoverBgColor:rgba(31, 33, 38, 0.12),
+     // 底色
+     tabbarBgColor:#1c1e24,
+
+     // 滇池概况 
+    leftBgColor:#1C1E24,
+    leftPannelBgColor:#323334,
+    // home
+    // pannelBgColor: #1c1e24,
+    pannelBgColor: #323334,
+    pannelFontColor: rgba(255, 255, 255, 0.85),
+    // routerchange
+    // routerChangeBgColor: #323334,
+    routerChangeBgColor: #1c1e24,
+    // filter 筛选组件颜色配置
+    filterBgColor: rgba(255, 255, 255, 0.08),
+    filterBgColor1: rgba(255, 255, 255, 0.08),
+    selectFilterBgColor: #2d2f35,
+    selectHoverBgColor: rgba(255, 255, 255, 0.08),
+    // table
+    tableHeadBgColor: #2d2f35,
+    tableTextColor: #00cfb9,
+    tableDelTextColor: rgba(255, 101, 101, 1),
+    // paginate
+    paginatePagerBgColor: rgba(255, 255, 255, 0.08),
+    // 时间选择
+      timeSelectBgColor: rgba(62,104,247,.12),
+    timeSelectTextColor: #fff,
+    // 功能se
+      dangerColor: rgba(255, 101, 101, 1),
+    // 分割线
+      dividingLineColor: rgba(255, 255, 255, 0.12),
+       // radio
+    activeBgColor:rgba(28,30,36,.65),
+    activeTextColor: rgba(255,255,255,.85),
+    normalBgColor:#323334,
+    radioborderColor:rgba(28,30,36,.65),
+    filterInputBgColor:#1c1e24,
+     // svg 
+     svgTextColor:#8d8d8d
+  ),
+);
